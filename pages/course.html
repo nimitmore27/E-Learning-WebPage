@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Learning : Dashboard</title>
+    <title>E-Learning : Courses</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f462297f0f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container flex">
+    <div class="container">
         <div class="navigationPanel flex-col">
             <div class="logo">
                 <img src="https://nimitmore27.github.io/E-Learning-WebPage/imgs/logo.png" alt="logo">
                 <h2>Academy</h2>
             </div>
             <div class="navigators flex-col">
-                <a href="https://nimitmore27.github.io/E-Learning-WebPage/index.html" class="selected"><i class="fa-solid fa-chart-pie"></i>Dashboard</a>
-                <a href="https://nimitmore27.github.io/E-Learning-WebPage/pages/course.html"><i class="fa-solid fa-layer-group"></i>Courses</a>
+                <a href="https://nimitmore27.github.io/E-Learning-WebPage/index.html"><i class="fa-solid fa-chart-pie"></i>Dashboard</a>
+                <a href="https://nimitmore27.github.io/E-Learning-WebPage/pages/course.html" class="selected"><i class="fa-solid fa-layer-group"></i>Courses</a>
                 <a href="https://nimitmore27.github.io/E-Learning-WebPage/pages/chats.html"><i class="fa-solid fa-message"></i>Chats</a>
                 <a href="https://nimitmore27.github.io/E-Learning-WebPage/pages/grades.html"><i class="fa-solid fa-chart-column"></i>Grades</a>
                 <a href="https://nimitmore27.github.io/E-Learning-WebPage/pages/schedule.html"><i class="fa-solid fa-calendar-days"></i>Schedule</a>
@@ -31,18 +31,16 @@
                 <button>More Details</button>
             </div>
         </div>
-        <div class="main flex-col">
-            <div class="searchbar flex al-jus-center">
+        <div class="main flex-col" style="width:70%;">
+            <div class="searchbar flex ">
                 <div class="titlediv">
-                    <h1>Dashboard</h1>
+                    <h1>Courses</h1>
                 </div>
                 <div class="search flex al-jus-center">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="search" id="inpsearch" placeholder="Search">
+                    <input type="search" id="inpsearch">
                 </div>
-                <i class="fa-solid fa-bell" id="bell"></i>
             </div>
-
             <div class="newcoursesdiv">
                 <div class="titlediv">
                     <h2>New Courses</h2>
@@ -206,81 +204,6 @@
                 </div>
             </div>
         </div>
-        <div class="userPreview">
-            <div class="profileinfo flex-col">
-                <div class="profilehead flex">
-                    <h2>Profile</h2>
-                    <i class="fa-solid fa-user-pen"></i>
-                </div>
-                <div class="person flex-col al-jus-center">
-                    <img src="https://nimitmore27.github.io/E-Learning-WebPage/imgs/userPic.png" alt="userIMG" width="30%">
-                    <h3 id="stdname">
-                        Esther Howard 
-                        <i class="fa-solid fa-circle-check"
-                            style="color: var(--darkpurple);">
-                        </i>
-                    </h3>
-                    <h5 id="stdlvl"><small>Elementry</small></h5>
-                </div>
-            </div>
-            <div class="calender">
-                <iframe src="https://tinyurl.com/2p8denz3" frameborder="0" scrolling="no"></iframe>
-            </div>
-            <div class="progress">
-                <h2>Homework Progress</h2>
-                <div class="progressdivs">
-                    <div class="leftprogress">
-                        <div class="meter">
-                            <div class="circular-progress">
-                                <div class="value-container">
-                                    0%
-                                </div>
-                            </div>
-                        </div>
-                        <div class="courseTitle">
-                            <p>Styling with css</p>
-                            <small>12 tasks</small>
-                        </div>
-                    </div>
-                    <div class="btn"><i class="fa-solid fa-angle-right"></i></div>
-                </div>
-                <div class="progressdivs">
-                    <div class="leftprogress">
-                        <div class="meter">
-                            <div class="circular-progress">
-                                <div class="value-container">
-                                    0%
-                                </div>
-                            </div>
-                        </div>
-                        <div class="courseTitle">
-                            <p>Basics of programming</p>
-                            <small>18 tasks</small>
-                        </div>
-                    </div>
-                    <div class="btn"><i class="fa-solid fa-angle-right"></i></div>
-                </div>
-                <div class="progressdivs">
-                    <div class="leftprogress">
-                        <div class="meter">
-                            <div class="circular-progress">
-                                <div class="value-container">
-                                    0%
-                                </div>
-                            </div>
-                        </div>
-                        <div class="courseTitle">
-                            <p>Learn to Program in Java</p>
-                            <small>10 tasks</small>
-                        </div>
-                    </div>
-                    <div class="btn"><i class="fa-solid fa-angle-right"></i></div>
-                </div>
-            </div>
-        </div>
     </div>
-    <script src="script.js">
-        
-    </script>
 </body>
 </html>
